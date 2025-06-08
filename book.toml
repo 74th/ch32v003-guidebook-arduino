@@ -1,0 +1,5 @@
+[book]
+authors = ["Atsushi Morimoto (74th)"]
+language = "en"
+src = "src"
+title = "CH32V003開発ガイドブック-Arduino編-"
