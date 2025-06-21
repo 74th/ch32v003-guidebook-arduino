@@ -12,5 +12,6 @@
 - [SPI](./10-spi/README.md)
 - [NeoPixel](./11-neopixel/README.md)
 - [OLED](./12-OLED/README.md)
-- [筆者の製作](./90-product/README.md)
+- [その他元本で扱っていること](./90-other_topic/README.md)
+- [筆者の製作](./91-product/README.md)
 - [おわりに](./99-epilogue/README.md)
