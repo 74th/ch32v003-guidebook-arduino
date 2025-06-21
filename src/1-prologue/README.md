@@ -7,7 +7,6 @@
 『CH32V003開発ガイドブック』の販売ページはこちらです。
 
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH
->
 > [https://74th.booth.pm/items/6934072](https://74th.booth.pm/items/6934072)
 
 ## まえがき
@@ -29,4 +28,5 @@ UIAPさんが、CH32V003を使った開発ボードを頒布し、CH32V003での
 
 このドキュメントは、GitHubのリポジトリで公開しております。
 
-https://github.com/74th/ch32v003-guidebook-arduino
+> 74th/ch32v003-guidebook-arduino: CH32V003開発ガイドブック Arduino抜粋版
+> [https://github.com/74th/ch32v003-guidebook-arduino](https://github.com/74th/ch32v003-guidebook-arduino)
