@@ -2,7 +2,9 @@
 
 <!-- textlint-disable ja-technical-writing/ja-no-weak-phrase -->
 
-本書では、CH32V003の開発について解説してきました。
+本書では、CH32V003のArduinoでの開発について解説してきました。
+Arduinoは非常に簡単に扱えるため、簡単なことしかできないと悲観せずに、開発スピード重視で使っていくことをお勧めします。
+CH32V003でもっと高度なことをしたいと思ったときに、ぜひ元の書を参考に公式SDKやch32funを使ってみてください。
 
 筆者はこの執筆を通して、CH32V003の使い方を深く知ることができました。
 実際に、StickPointVに対して、ch32funのI2C Slaveライブラリの利用に置き換えるリファクタリングをしたり、SparrowSv3の右手キーボードにWatchdog Timerを追加したりしました。
@@ -61,21 +63,4 @@ VS Codeにわりと詳しく、2024年1月に『改訂新版 Visual Studio Code�
 - [USB-C Solder Tester v2: Type-Cソケット実装を確認するツール](https://74th.booth.pm/items/5812941)
 - 他、40点以上
 
-</div>
-
-<div style="break-before: page;" />
-
-<div height="10px"> </div>
-
-<div style="break-before: page;" />
-
-<div style="height: 500px;" >
-
-</div>
-
-<div id="inprint">
-    <p>CH32V003開発ガイドブック</p>
-    <p>2025年05月31日 初版発行（@技術書典18）</p>
-    <p>著 Atsushi Morimoto (@74th)</p>
-    <p>印刷所 日光企画</p>
 </div>

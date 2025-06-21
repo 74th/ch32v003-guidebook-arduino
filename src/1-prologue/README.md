@@ -8,6 +8,10 @@
 
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH<br/>[https://74th.booth.pm/items/6934072](https://74th.booth.pm/items/6934072)
 
+元本では、公式SDK、ch32fun、直接レジスタを操作する方法など、CH32V003の開発について幅広く解説しています。
+公式SDKとレジスタ操作が必要な、『DMAとTimer』『WatchDogTimer』『省エネルギーモード』については、抜粋版には記載がありません。
+元の本を参照をお願いします。
+
 ## まえがき
 
 CH32V003はWCHが開発した非常に安価なRISC-V MCUです。
