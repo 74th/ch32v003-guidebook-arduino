@@ -1,9 +1,6 @@
-# CH32V003の魅力と基礎知識
+# 1. CH32V003の魅力と基礎知識
 
 まず、本書で取り扱うCH32V003について解説します。
-
-本章は、CH32V003の解説が多く、CH32V003をArduinoで使うために必要とされる知識以外も多く含まれています。
-CH32V003をArduinoで使うだけであれば、本章はスキップして次の章に進んでください。
 
 ## 1.1. CH32V003とは
 
@@ -54,11 +51,11 @@ QFN20（0.4mmピッチ20ピン）のパッケージは、ICサイズも3.0mm×3.
 WCH社の公式ショップがAliexpressに出店しており、そこから購入することができます。
 そこでは50個単位での購入となりますが、2025年4月現在送料を含めて1,200円ほどで購入できます。
 
-> 50 ピース/ロット CH32V003 工業グレード MCU、RISC-V2A、単線シリアル デバッグ インターフェイス、システム周波数 48MHz - AliExpress<br/>[https://ja.aliexpress.com/item/1005005036714708.html](https://ja.aliexpress.com/item/1005005036714708.html)
+> 50 ピース/ロット CH32V003 工業グレード MCU、RISC-V2A、単線シリアル デバッグ インターフェイス、システム周波数 48MHz - AliExpress<br/>https://ja.aliexpress.com/item/1005005036714708.html
 
 秋月電子通商でも、TSSOP-20（0.65mmピッチ20ピン）のCH32V003F4P6が1個50円、SOP-8（1.27mmピッチ8ピン）のCH32V003J4M6が40円で購入できます。
 
-> 32ビットRISC-Vマイコン CH32V003F4P6: 半導体 秋月電子通商-電子部品・ネット通販<br/>[https://akizukidenshi.com/catalog/g/g118061/](https://akizukidenshi.com/catalog/g/g118061/)
+> 32ビットRISC-Vマイコン CH32V003F4P6: 半導体 秋月電子通商-電子部品・ネット通販<br/>https://akizukidenshi.com/catalog/g/g118061/
 
 50個単位での購入でも高くないので、ひとまずまとまった数を購入してみると良いでしょう。
 Aliexpressで購入した場合でも1〜2週間程度で到着します。
@@ -68,7 +65,7 @@ Aliexpressで購入した場合でも1〜2週間程度で到着します。
 CH32V003を最小限動作させる回路は以下のようになります。
 
 <figure class="wide">
-<img src="./img/minimal_circuit.svg" width="20%" style="background-color: #fff;"/>
+<img src="./kicad/minimal_circuit/minimal_circuit.svg" width="20%"/>
 <figcaption>CH32V003の最小限の回路</figcaption>
 </figure>
 
@@ -99,12 +96,12 @@ ESP32S2を使った「esp32s2-funprog」、STM32F042を使った「NHC-Link042�
 
 WCH-LinkEは秋月電子通商で、1,000円ほどで購入することができます。
 
-> WCH-LinkEエミュレーター: 開発ツール・ボード 秋月電子通商-電子部品・ネット通販<br/>[https://akizukidenshi.com/catalog/g/g118065/](https://akizukidenshi.com/catalog/g/g118065/)
+> WCH-LinkEエミュレーター: 開発ツール・ボード 秋月電子通商-電子部品・ネット通販<br/>https://akizukidenshi.com/catalog/g/g118065/
 
 AliexpressでWHC-LinkEと評価ボード、MCUのセットが販売しています。
 こちらを購入しても良いでしょう。
 
-> メイン周波数48MHz,1本/キット,ch32v003f4p6 qingke RISC-V2A - AliExpress<br/>[https://ja.aliexpress.com/item/1005004895791296.html](https://ja.aliexpress.com/item/1005004895791296.html)
+> メイン周波数48MHz,1本/キット,ch32v003f4p6 qingke RISC-V2A - AliExpress<br/>https://ja.aliexpress.com/item/1005004895791296.html
 
 筆者のBoothショップでもクローン品を作成し販売しております。
 CH32V003開発ボードキットを発売した当初、まだ国内でWCH-LinkEが入手できなかったため、作成し、販売していました。
@@ -115,8 +112,7 @@ CH32V003開発ボードキットを発売した当初、まだ国内でWCH-LinkE
 <figcaption>WCH-LinkEクローン</figcaption>
 </figure>
 
-> WCH-LinkEクローン USB-C,SWD10Pin(¥2,500) [74TH-G016] - 74th Books & Gadgets - BOOTH
-> [https://74th.booth.pm/items/5022813](https://74th.booth.pm/items/5022813)
+> WCH-LinkEクローン USB-C,SWD10Pin(¥2,500) [74TH-G016] - 74th Books & Gadgets - BOOTH<br/>https://74th.booth.pm/items/5022813
 
 WCH-LinkEとCH32V003は、SWIOと呼ばれる、1本の線で書き込みができるシリアルインターフェースを使って接続します。
 GNDとSWIOの2本の線を接続すれば書き込みができます。
@@ -133,7 +129,7 @@ WCH社が公式に提供しているライブラリです。
 後ほど紹介するMounRiver Studioから利用できるようになっていますが、コード自体は以下のリポジトリで公開されています。
 OSSとしてApache 2.0ライセンスで公開してくれています。
 
-> [https://github.com/openwch/ch32v003/](https://github.com/openwch/ch32v003/)
+> https://github.com/openwch/ch32v003/
 
 STM32のSPLとほぼ同じAPIを提供しているため、STM32の解説書がCH32を利用する場合でも参考になります。
 以後、本書では公式SDKのことをWCH SDKと呼びます。
@@ -144,7 +140,7 @@ WCH社がWCH SDKをArduinoのAPIでラップし、Arduino IDEで開発できる�
 
 以下のリポジトリで公開されています。
 
-> [https://github.com/openwch/arduino_core_ch32](https://github.com/openwch/arduino_core_ch32)
+> https://github.com/openwch/arduino_core_ch32
 
 Arduinoは多くのサードパーティライブラリが活用できることも魅力の一つです。
 しかし、それらの中にはArduino UNO R3など特定のボードのMCUに向けた仕様になっているものが多く、動作しない場合があります。
@@ -157,8 +153,7 @@ CH32V003はとてもFlash領域が少ないため、ライブラリでさえも�
 容量節約のため、ch32funではレジスタを直接操作することを基本としています。
 ファームウェア開発に集中できるように、ビルドや書き込み、ファームウェアのスタートアップ、デバッグプリントなどの開発に必要な機能をフルスタックで提供しています。
 
-> Open source minimal stack for the ch32 line of WCH processors, including the ch32v003, a 10¢ 48 MHz RISC-V Microcontroller - as well as many other chips within the ch32v/x line.
-> [https://github.com/cnlohr/ch32fun](https://github.com/cnlohr/ch32fun)
+> Open source minimal stack for the ch32 line of WCH processors, including the ch32v003, a 10¢ 48 MHz RISC-V Microcontroller - as well as many other chips within the ch32v/x line.<br/>https://github.com/cnlohr/ch32fun
 
 以前は、ch32funはch32v003funと呼ばれていました。
 
@@ -172,14 +167,12 @@ ch32funでの開発の基本はレジスタを直接操作することですが�
 
 Rustでレジスタ操作でファームウェアを開発できるPeripheral Access Crateがch32-rsというOSSとして公開されています。
 
-> Embedded Rust device crates for WCH's RISC-V and Cortex-M microcontrollers
-> [https://github.com/ch32-rs/ch32-rs](https://github.com/ch32-rs/ch32-rs)
+> Embedded Rust device crates for WCH's RISC-V and Cortex-M microcontrollers<br/>https://github.com/ch32-rs/ch32-rs
 
 また、embedded-halとよばれる汎用API仕様でラップしたクレートも公開されています。
 クレートは全ての機能を網羅できているわけではないため、必要に応じて利用を選択してください。
 
-> ch32-rs/ch32v00x-hal: HAL for the CH32V003 family of microcontrollers
-> [https://github.com/ch32-rs/ch32v00x-hal](https://github.com/ch32-rs/ch32v00x-hal)
+> ch32-rs/ch32v00x-hal: HAL for the CH32V003 family of microcontrollers<br/>https://github.com/ch32-rs/ch32v00x-hal
 
 第16章で、Rustでの環境構築について簡単に紹介します。
 
@@ -188,7 +181,7 @@ Rustでレジスタ操作でファームウェアを開発できるPeripheral Ac
 CH32V003で利用できるArduinoライブラリには、先ほど紹介したArduino Core CH32以外にもarduino-wch32v003があります。
 ch32funをArduinoのAPIでラップした、OSSとなっています。
 
-> [https://github.com/AlexanderMandera/arduino-wch32v003](https://github.com/AlexanderMandera/arduino-wch32v003)
+> https://github.com/AlexanderMandera/arduino-wch32v003
 
 ### エディタ・IDE
 
@@ -199,7 +192,7 @@ ch32funをArduinoのAPIでラップした、OSSとなっています。
 WCH社の公式の開発環境として、MounRiver Studio 2が提供されています。
 ファームウェアライブラリにはWCH SDKを利用します。
 
-> MounRiver Studio<br/>[http://www.mounriver.com/](http://www.mounriver.com/)
+> MounRiver Studio<br/>http://www.mounriver.com/
 
 MounRiver Studio 1では、Eclipseベースであり、対応OSではWindows(x64)のみが提供されていました。
 MounRiver Studio 2からは、VS Codeベースに変更され、対応OSもWindows(x64)、macOS(aarch64、ただしコンパイラ等はx64)、Linux(x64)が提供されています。
@@ -247,8 +240,7 @@ WCH-LinkEのファームウェアのアップデートもこのツールを介�
 
 以下からダウンロードできます。
 
-> WCH-LinkUtility.ZIP - 南京沁恒微电子股份有限公司
-> [https://www.wch.cn/downloads/WCH-LinkUtility_ZIP.html](https://www.wch.cn/downloads/WCH-LinkUtility_ZIP.html)
+> WCH-LinkUtility.ZIP - 南京沁恒微电子股份有限公司<br/>https://www.wch.cn/downloads/WCH-LinkUtility_ZIP.html
 
 #### OpenOCD
 
@@ -260,12 +252,11 @@ MounRiver Studio利用時のみ利用すれば良いでしょう。
 wlinkは、Rust製のマルチプラットフォームに対応したツールで、WCH-LinkEを介して、ファームウェアの書き込み、消去などができます。
 CH32VシリーズのRust用ライブラリのメンテナが製作しています。
 
-> ch32-rs/wlink: An open source WCH-Link library/command line tool written in Rust.
-> [https://github.com/ch32-rs/wlink](https://github.com/ch32-rs/wlink)
+> ch32-rs/wlink: An open source WCH-Link library/command line tool written in Rust.<br/>https://github.com/ch32-rs/wlink
 
 GitHubリポジトリにてビルド済みバイナリも公開されているため、ダウンロードして使うことができます。
 
-> Releases · ch32-rs/wlink<br/>[https://github.com/ch32-rs/wlink/releases](https://github.com/ch32-rs/wlink/releases)
+> Releases · ch32-rs/wlink<br/>https://github.com/ch32-rs/wlink/releases
 
 wlinkを使ってファームウェアを書き込むには以下のように実行します。
 
@@ -316,8 +307,7 @@ WCH社の公式の評価ボードがあります。
 <figcaption>公式評価ボード</figcaption>
 </figure>
 
-> メイン周波数48MHz,1本/キット,ch32v003f4p6 qingke RISC-V2A - AliExpress
-> [https://ja.aliexpress.com/item/1005004895791296.html](https://ja.aliexpress.com/item/1005004895791296.html)
+> メイン周波数48MHz,1本/キット,ch32v003f4p6 qingke RISC-V2A - AliExpress<br/>https://ja.aliexpress.com/item/1005004895791296.html
 
 まずは1つ持っておくと便利です。
 
@@ -340,12 +330,12 @@ ProMicroとUART、I2C、SPIのピン配置を同じにしているため、ProMi
 
 こちらはBoothショップで、キットとして販売しています。
 
-> CH32V003 ProMicroサイズ開発ボードキット (3個入¥1,500) [74TH-G015] - 74th Books & Gadgets - BOOTH<br/>[https://74th.booth.pm/items/4645948](https://74th.booth.pm/items/4645948)
+> CH32V003 ProMicroサイズ開発ボードキット (3個入¥1,500) [74TH-G015] - 74th Books & Gadgets - BOOTH<br/>https://74th.booth.pm/items/4645948
 
 設計ファイル（KiCad）はOSSHWとして公開しています。
 ご自身でPCBファブリケータに発注して製造することも可能です。
 
-> ch32v-dev-boards/ch32v003-promicro at main · 74th/ch32v-dev-boards<br/>[https://github.com/74th/ch32v-dev-boards/tree/main/ch32v003-promicro](https://github.com/74th/ch32v-dev-boards/tree/main/ch32v003-promicro)
+> ch32v-dev-boards/ch32v003-promicro at main · 74th/ch32v-dev-boards<br/>https://github.com/74th/ch32v-dev-boards/tree/main/ch32v003-promicro
 
 ### UIAPduino Pro Micro CH32V003
 
@@ -361,14 +351,14 @@ UIAPduino用のArduinoパッケージをインストールすることで、USB�
 
 BOOTHショップやスイッチサイエンスで購入できます。
 
-> UIAPduino Pro Micro CH32V003 V1.4 - UIAP - BOOTH<br/>[https://uiap.booth.pm/items/5845791](https://uiap.booth.pm/items/5845791)
+> UIAPduino Pro Micro CH32V003 V1.4 - UIAP - BOOTH<br/>https://uiap.booth.pm/items/5845791
 
 ### その他の開発ボード
 
 ReAct Studioが作成した開発ボードが、国内のビットトレードワンで販売されています。
 374円という非常に安価な価格で販売されています。
 
-> WA00007 [Weact]CH32V003F4U6マイコンボード — ビット・トレード・ワン 公式オンラインショップ BTOS<br/>[https://btoshop.jp/products/wa00007](https://btoshop.jp/products/wa00007)
+> WA00007 [Weact]CH32V003F4U6マイコンボード — ビット・トレード・ワン 公式オンラインショップ BTOS<br/>https://btoshop.jp/products/wa00007
 
 その他、AliexpressでもCH32V003の開発ボードが販売されています。
 CH32V003で検索すると、多数見つかると思います。
