@@ -9,7 +9,7 @@
 <figcaption>LEDとスイッチの回路</figcaption>
 </figure>
 
-## 5.1. Arduino
+## 4.1. Arduino
 
 Arduinoでの利用方法を解説します。
 サンプルコードは以下のリポジトリにあります。

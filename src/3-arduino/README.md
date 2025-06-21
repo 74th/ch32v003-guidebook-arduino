@@ -9,7 +9,7 @@ Arduino APIでCH32Vが開発できる環境をWCH社が提供しています。
 CH32V003用のArduinoライブラリには、WCH社が提供するArduino Core CH32と、arduino-wch32v003があります。
 本書ではArduino Core CH32を利用する場合の説明を記述します。
 
-## 2.1. Arduinoでの開発の準備
+## 3.1. Arduinoでの開発の準備
 
 本書ではArduino IDE 2.xを例に説明します。
 Arduino IDEのインストールについては、Webで「Arduino IDE」と検索するとArduino公式サイトが見つかり、ダウンロードできますので、それをPCにインストールしてください。
@@ -58,7 +58,7 @@ UIAPduinoの場合、専用のパッケージが用意されています。
   - 公式Arduinoの場合: WCH-SWD（WCH-LinkE経由で書き込みます）
   - UIAPduinoの場合: minichlink（UIAPduinoのUSB経由で書き込みます）
 
-## 2.2. まずLチカを成功させる
+## 3.2. まずLチカを成功させる
 
 ArduinoでのLチカをしてみましょう。
 Lチカとは、LEDを点滅する簡単なコードのことですが、これでビルドと書き込みができることで、開発環境が整ったことを確認できます。
@@ -108,7 +108,7 @@ UIAPduinoの場合には、ボード上のボタンを押しながらUSBケー�
 <figcaption>ビルドと書き込み</figcaption>
 </figure>
 
-## 2.3. Arduinoでのファームウェアの開発
+## 3.3. Arduinoでのファームウェアの開発
 
 ### Arduinoでのピンの名前の定義
 
@@ -155,11 +155,11 @@ Arduino IDEでシリアルモニタを開くには、まずツールバー中の
 
 なお、UIAPduinoでは、一般的なArduinoのようにUSB経由でシリアルモニタを開く機能は現状はありません。
 
-## 2.4. Arduinoのコードからレジスタを操作する
+## 3.4. Arduinoのコードからレジスタを操作する
 
 （本節は上級トピックのため、未掲載です。元本を参照ください。）
 
-## 2.5. まとめ
+## 3.5. まとめ
 
 以上、Arduino IDEでの開発方法を説明しました。
 後の各Peripheralの解説では、GPIOやADCなどのArduinoのAPIの使い方について詳しく説明します。

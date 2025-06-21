@@ -1,10 +1,10 @@
-# 15. NeoPixelとOLED SSD1306の制御
+# 12. NeoPixelとOLED SSD1306の制御
 
 SSD1306はOLEDディスプレイ用のドライバICで、I2CやSPIで制御可能な小型ディスプレイです。
 非常に安価で、文字、グラフ、画像などを簡単に表示できるため、電子工作で広く利用されています。
 このデバイスの使用方法を解説します。
 
-## 15.2. OLED SSD1306
+## 12.1. OLED SSD1306
 
 <figure class="wide">
 <img src="./img/i2c_oled.jpg" width="40%"/>
@@ -13,7 +13,7 @@ SSD1306はOLEDディスプレイ用のドライバICで、I2CやSPIで制御可�
 
 小型OLEDディスプレイで広く使われているドライバIC、SSD1306の使用方法を説明します。
 
-### Arduino
+## 12.2. Arduino
 
 Arduinoでの開発方法を解説します。
 サンプルコードは以下のリポジトリにあります。
