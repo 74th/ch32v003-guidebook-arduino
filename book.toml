@@ -3,3 +3,6 @@ authors = ["Atsushi Morimoto (74th)"]
 language = "ja"
 src = "src"
 title = "CH32V003開発ガイドブック-Arduino抜粋版-"
+
+[output.html]
+git-repository-url = "https://github.com/74th/ch32v003-guidebook-arduino"
