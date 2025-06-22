@@ -36,7 +36,7 @@ I2CのSDA、SCLのラインにはプルアップが必要です。
 接続の回路図は以下となります。
 
 <figure class="wide">
-<img src="./img/sht31.svg" style="background-color: white;" width="70%"/>
+<img src="./img/sht31.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>SHT31を使った回路</figcaption>
 </figure>
 

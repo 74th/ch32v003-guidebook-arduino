@@ -93,7 +93,7 @@ void loop() {
 回路図にすると以下のような形になります。
 
 <figure class="wide">
-<img src="./kicad/lchika/lchika.svg" width="70%"/>
+<img src="./img/lchika.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>Lチカのテストの配線</figcaption>
 </figure>
 

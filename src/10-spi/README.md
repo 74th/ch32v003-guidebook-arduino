@@ -34,7 +34,7 @@ MISO、MOSIを入れ替える用途くらいにしか使えません。
 温度センサADT7310とCH32V003の接続を回路図にすると以下となります。
 
 <figure class="wide">
-<img src="./img/spi.svg" style="background-color: white;" width="60%"/>
+<img src="./img/spi.svg" style="background-color: white; padding:10px;" width="60%"/>
 <figcaption>サンプル回路</figcaption>
 </figure>
 

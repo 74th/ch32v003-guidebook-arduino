@@ -64,7 +64,7 @@ ADCを使ってアナログジョイスティックを読み取り、I2Cスレ�
 Groveケーブルを使って接続します。
 
 <figure class="wide">
-<img src="./img/relay_switch_hub-structure.drawio.svg" style="background-color: white;" width="75%"/>
+<img src="./img/relay_switch_hub-structure.drawio.svg" style="background-color: white; padding:10px;" width="75%"/>
 <figcaption>Relay Switch Hubの構成</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ ESP32-C3では、キーボードを実現するほどのIOが足りないため�
 以下が構成図となります。
 
 <figure class="wide">
-<img src="./img/sparrowtv-structure.drawio.svg" style="background-color: white;" width="80%"/>
+<img src="./img/sparrowtv-structure.drawio.svg" style="background-color: white; padding:10px;" width="80%"/>
 <figcaption>SparrowTVの構成</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ USB Rebooterは、USBデバイスを定期的に電源オフによる再起動�
 CH32V003は安価であるため、簡易Timerとして使用しました。
 
 <figure class="wide">
-<img src="./img/usb_rebooter-structure.drawio.svg" style="background-color: white;" width="70%"/>
+<img src="./img/usb_rebooter-structure.drawio.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>USB Rebooterの構成</figcaption>
 </figure>
 
@@ -155,7 +155,7 @@ CH32V003を組み込んで、長押しでUSBのオフにする機能を追加し
 構成は以下のようになっています。
 
 <figure class="wide">
-<img src="./img/usb_switch_adapter-structure.drawio.svg" style="background-color: white;" width="70%"/>
+<img src="./img/usb_switch_adapter-structure.drawio.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>USB Switch Adapterの構成</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ USBシリアル変換ICにはCH9102を使っています。
 構成は以下のようになります。
 
 <figure class="wide">
-<img src="./img/esp32_writer_pro-structure.drawio.svg" style="background-color: white;" width="70%"/>
+<img src="./img/esp32_writer_pro-structure.drawio.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>ESP32 Writer Proの構成</figcaption>
 </figure>
 
@@ -240,7 +240,7 @@ RP2040をメインMCUとして左手側に配置し、CH32V003を右手側に配
 その構成は以下のようになっています。
 
 <figure class="wide">
-<img src="./img/sparrowsv3-structure.drawio.svg" style="background-color: white;" width="70%"/>
+<img src="./img/sparrowsv3-structure.drawio.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>SparrowS v3の構成</figcaption>
 </figure>
 

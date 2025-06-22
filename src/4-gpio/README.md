@@ -5,7 +5,7 @@
 ここでは、以下のようなスイッチとLEDの付いた回路を制御できるようにします。
 
 <figure class="wide">
-<img src="./img/blink_and_read.svg" style="background-color: white;" width="40%"/>
+<img src="./img/blink_and_read.svg" style="background-color: white; padding:10px;" width="40%"/>
 <figcaption>LEDとスイッチの回路</figcaption>
 </figure>
 

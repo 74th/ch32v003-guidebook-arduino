@@ -32,7 +32,7 @@ UARTで動かすツールとして、秋月電子通商でも販売されてい�
 筆者の利用したセンサーは壊れているようでしたが、UARTでの通信の確認に用いました。
 
 <figure class="wide">
-<img src="./img/uart.svg" style="background-color: white;" width="50%"/>
+<img src="./img/uart.svg" style="background-color: white; padding:10px;" width="50%"/>
 <figcaption>MH-Z19Cを読み取るサンプル回路</figcaption>
 </figure>
 

@@ -27,7 +27,7 @@ CH32V003には、10bit分解能のADCが8チャンネル搭載されています
 回路図に示すと以下のようになります。
 
 <figure class="wide">
-<img src="./img/adc.svg" style="background-color: white;" width="60%"/>
+<img src="./img/adc.svg" style="background-color: white; padding:10px;" width="60%"/>
 <figcaption>2軸ジョイスティック読み取りの回路図</figcaption>
 </figure>
 
