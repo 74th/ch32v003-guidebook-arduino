@@ -2,7 +2,7 @@
 
 <!-- textlint-disable ja-technical-writing/ja-no-weak-phrase -->
 
-本書では、CH32V003のArduinoでの開発について解説してきました。
+本サイトでは、CH32V003のArduinoでの開発について解説してきました。
 Arduinoは非常に簡単に扱えるため、簡単なことしかできないと悲観せずに、開発スピード重視で使っていくことをお勧めします。
 CH32V003でもっと高度なことをしたいと思ったときに、ぜひ元の書を参考に公式SDKやch32funを使ってみてください。
 

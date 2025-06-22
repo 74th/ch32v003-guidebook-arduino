@@ -24,11 +24,15 @@ Arduino IDEを起動し、メニューバーから基本設定(Settings)を開�
 
 ここに以下のURLを1行追加します。
 
-```
-# 一般的なCH32V003の場合
-https://raw.githubusercontent.com/robinjanssens/WCH32V_board_manager_files/main/package_ch32v_index.json
+**一般的なCH32V003の場合**
 
-# UIAPduinoの場合
+```
+https://raw.githubusercontent.com/robinjanssens/WCH32V_board_manager_files/main/package_ch32v_index.json
+```
+
+**UIAPduinoの場合**
+
+```
 https://github.com/YuukiUmeta-UIAP/board_manager_files/raw/main/package_uiap.jp_index.json
 ```
 
@@ -44,6 +48,11 @@ UIAPduinoの場合、専用のパッケージが用意されています。
 <img src="./img/arduinoide-board_manager.drawio.svg" width="50%"/>
 <figcaption>Board Managerからパッケージのインストール</figcaption>
 </figure>
+
+Windowsの場合、`Error: 13 INTERNAL: Cannot install tool WCH:beforeinstall@1.0.0: extracting archive: Create link`というエラーが出ることがあります。
+これはインストール時に管理者権限を利用しているために発生することがあります。
+このエラーが出た場合には、一度Arduino IDEを終了し、Arduino IDEのアイコンを右クリックして「管理者として実行」を選択して起動してください。
+一度インストールを行った後は、再度Arduino IDEを再起動し、通常ユーザで利用できます。
 
 パッケージがインストールされ、CH32V003のボードが選択可能になりました。
 次にタイトルメニューバーから、利用する環境に合わせて、以下の通りに選択します。
@@ -123,6 +132,9 @@ UART経由でログ出力するしかありません。
 
 UARTのTX（送信）は`PD5`が使われます。
 `PD5`と、WCH-LinkEのRXを接続してください。
+
+また、SOP-8パッケージのCH32V003J4M6ではUARTのデフォルトのTX（送信）ピン `PD5` がSWDIOピンの `PD1` と共用されているため、一度UARTを有効にするとSWIOが無効になりSWIO経由での書き込みができなくなります。
+詳しくは[「12.6. CH32V003開発で知っておくと良いこと」の「SOP-8のCH32V003J4M6のUSART TXとSWIOのピンの共用」](../12-ch32v003/README.md#sop-8のch32v003j4m6のusart-txとswioのピンの共用)に書かれています。そちらを参照してください。
 
 UARTでログ出力の例を示します。
 print命令の詳しい使い方は、Arduinoのドキュメントを参照してください。
