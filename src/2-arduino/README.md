@@ -135,7 +135,7 @@ UARTのTX（送信）は`PD5`が使われます。
 `PD5`と、WCH-LinkEのRXを接続してください。
 
 また、SOP-8パッケージのCH32V003J4M6ではUARTのデフォルトのTX（送信）ピン `PD5` がSWDIOピンの `PD1` と共用されているため、一度UARTを有効にするとSWIOが無効になりSWIO経由での書き込みができなくなります。
-詳しくは[「12.6. CH32V003開発で知っておくと良いこと」の「SOP-8のCH32V003J4M6のUSART TXとSWIOのピンの共用」](../12-ch32v003/README.md#sop-8のch32v003j4m6のusart-txとswioのピンの共用)に書かれています。そちらを参照してください。
+詳しくは[「12.6. CH32V003開発で知っておくと良いこと」の「SOP-8のCH32V003J4M6のUSART TXとSWIOのピンの共用」](../12-ch32v003/index.html#sop-8%E3%81%AEch32v003j4m6%E3%81%AEusart-tx%E3%81%A8swio%E3%81%AE%E3%83%94%E3%83%B3%E3%81%AE%E5%85%B1%E7%94%A8)に書かれています。そちらを参照してください。
 
 UARTでログ出力の例を示します。
 print命令の詳しい使い方は、Arduinoのドキュメントを参照してください。
