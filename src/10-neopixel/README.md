@@ -1,4 +1,4 @@
-# 11. NeoPixel
+# 10. NeoPixel
 
 NeoPixelはAdafruit社のRGB LEDテープの商品名ですが、本書ではWS2812Bチップを使用したRGB LEDの総称として扱います。
 このデバイスの使用方法を解説します。
