@@ -111,6 +111,7 @@ UIAPduinoの場合には、ボード上のボタンを押しながらUSBケー�
 
 さて、Arduino IDEでファームウェアを書き込み、上部のツールバーアイコンの右矢印（→）マーク「書き込み」をクリックします。
 このときエラーが表示されても、出力タブに「Verified OK」と表示されていれば成功です。
+UIAPduinoの場合には、「Image written.」と表示されれば成功です。
 
 <figure class="wide">
 <img src="./img/arduinoide-upload.drawio.svg" width="75%"/>
