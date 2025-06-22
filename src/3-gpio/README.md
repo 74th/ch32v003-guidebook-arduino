@@ -1,4 +1,4 @@
-# 4. GPIO
+# 3. GPIO
 
 本章では、GPIOとして、デジタル信号の入力出力を行う方法を説明します。
 
@@ -9,7 +9,7 @@
 <figcaption>LEDとスイッチの回路</figcaption>
 </figure>
 
-## 4.1. Arduino
+## 3.1. Arduino
 
 Arduinoでの利用方法を解説します。
 サンプルコードは以下のリポジトリにあります。
