@@ -10,12 +10,16 @@
 
 > https://ch32v003-guidebook-arduino.74th.tech/
 
-ぜひ、本ページで興味を持っていただいたり、Arduinoでできること以上のことを学びたい方は、書籍を購入してみてください。
+ぜひ、本サイトで興味を持っていただいたり、Arduinoでできること以上のことを学びたい方は、書籍を購入してみてください。
 『CH32V003開発ガイドブック』の販売ページはこちらです。
 
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH
 >
 > [https://74th.booth.pm/items/6934072](https://74th.booth.pm/items/6934072)
+
+本サイト掲載のコードは以下のリポジトリにあります。
+
+> https://github.com/74th/ch32v003-book-code
 
 ## 本書の執筆環境について
 
