@@ -67,7 +67,7 @@ Aliexpressで購入した場合でも1〜2週間程度で到着します。
 CH32V003を最小限動作させる回路は以下のようになります。
 
 <figure class="wide">
-<img src="./img/minimal_circuit.svg" width="20%" style="background-color: #fff;"/>
+<img src="./img/minimal_circuit.svg" width="20%" style="background-color: white; padding: 10px;"/>
 <figcaption>CH32V003の最小限の回路</figcaption>
 </figure>
 

@@ -30,7 +30,7 @@ ADCを使ってアナログジョイスティックを読み取り、I2Cスレ�
 ファームウェアはch32funを使って作りました。
 
 <figure class="wide">
-<img src="./img/stickpointv-structure.drawio.svg" width="70%"/>
+<img src="./img/stickpointv-structure.drawio.svg" style="background-color: white; padding:10px;" width="70%"/>
 <figcaption>Stick Point Vの構造</figcaption>
 </figure>
 
