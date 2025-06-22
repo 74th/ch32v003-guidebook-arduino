@@ -1,9 +1,9 @@
-# 11. NeoPixel
+# 10. NeoPixel
 
 NeoPixelはAdafruit社のRGB LEDテープの商品名ですが、本書ではWS2812Bチップを使用したRGB LEDの総称として扱います。
 このデバイスの使用方法を解説します。
 
-## 11.1. NeoPixel
+## 10.1. NeoPixel
 
 <figure class="wide">
 <img src="./img/ws2812_photo.drawio.svg" width="70%"/>
@@ -18,7 +18,7 @@ NeoPixelの制御には、0.3μ秒という非常に短いパルス幅の信号�
 そのため、レジスタを直接操作したり、DMAと組み合わせるなどのPeripheralを活用する必要があります。
 SPIで信号を代用する方法も知られています。
 
-## 11.2. Arduino
+## 10.2. Arduino
 
 Arduino環境でも、レジスタへの直接アクセスは可能です。
 レジスタ直接操作や特定のCPU命令を利用して、NeoPixelを制御する関数を作成しました。
