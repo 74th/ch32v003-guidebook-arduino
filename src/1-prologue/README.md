@@ -9,6 +9,8 @@
 CH32V003について、さらに使いこなしたいと思った場合には、元の書籍『CH32V003開発ガイドブック』をお求めいただければ幸いです。
 『CH32V003開発ガイドブック』の販売ページはこちらです。
 
+> CH32V003開発ガイドブック — スイッチサイエンス<br/>[https://www.switch-science.com/products/10547](https://www.switch-science.com/products/10547)
+
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH<br/>[https://74th.booth.pm/items/6934072](https://74th.booth.pm/items/6934072)
 
 元本では、公式SDK、ch32fun、直接レジスタを操作する方法など、CH32V003の開発について幅広く解説しています。

@@ -13,6 +13,10 @@
 ぜひ、本サイトで興味を持っていただいたり、Arduinoでできること以上のことを学びたい方は、書籍を購入してみてください。
 『CH32V003開発ガイドブック』の販売ページはこちらです。
 
+> CH32V003開発ガイドブック — スイッチサイエンス
+>
+> [https://www.switch-science.com/products/10547](https://www.switch-science.com/products/10547)
+
 > CH32V003開発ガイドブック[74TH-B018] - 74th Books & Gadgets - BOOTH
 >
 > [https://74th.booth.pm/items/6934072](https://74th.booth.pm/items/6934072)
