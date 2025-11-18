@@ -23,7 +23,7 @@ Arduinoでの開発方法を解説します。
 Arduino Core CH32環境では、Adafruit GFXライブラリと互換性のある「OLED SSD1306 - SH1106」ライブラリが利用可能です。
 このライブラリを使用した制御方法を説明します。
 
-> OLED SSD1306 - SH1106 - Arduino Reference<br/>[https://reference.arduino.cc/reference/en/libraries/oled-ssd1306-sh1106/](https://reference.arduino.cc/reference/en/libraries/oled-ssd1306-sh1106/)
+> OLED SSD1306 - SH1106 | Arduino Document<br/>[https://docs.arduino.cc/libraries/oled-ssd1306---sh1106/](https://docs.arduino.cc/libraries/oled-ssd1306---sh1106/)
 
 まず、Arduino IDEのライブラリマネージャを使用してこのライブラリをインストールします。
 ライブラリマネージャで「OLED SSD1306 SH1106」と検索し、表示される「OLED SSD1306 - SH1106」を選択してインストールしてください。
